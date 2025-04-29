@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background-color: #000000;
     padding: 1rem 2rem;
     display: flex;
@@ -44,4 +44,20 @@
     .nav-link {
       padding: 0.5rem;
     }
-  }
+  } */
+
+  .user-navbar img {
+    height: 8vh;
+}
+.user-navbar-navbtn a {
+    color: #A12AC2 !important;
+    font-weight: bold;
+}
+.user-navbar{
+    border-bottom: #A12AC2 solid 2px;
+    
+}
+#user-details-on-header{
+    color: #A12AC2 !important;
+    font-weight: bold;
+}
