@@ -6,6 +6,10 @@ import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import Movies from "./pages/Movies";
 import LoginPage from "./components/LoginPage";
+import SignUp from "./components/SignUp";
+import ProtectedRoute from "./components/ProtectedRoute ";
+
+
 
 // use command to create a new react app 'npm create vite@latest'
 // select React then JavaScript
@@ -21,13 +25,14 @@ function App() {
       <NavBar />
       <main className="main-content">
         <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/loginpage" element={<LoginPage />} />
-          <Route path="/movies" element={<Movies />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/loginpage" element={<LoginPage />} />
+          <Route path="/movies" element={<ProtectedRoute> <Movies /> </ProtectedRoute>} />
+          <Route path="/favorites" element={<ProtectedRoute><Favorites /></ProtectedRoute>} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </main>
-      
+
     </MovieProvider>
   );
 }

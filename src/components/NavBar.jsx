@@ -67,7 +67,7 @@ export default function NavBar() {
                                 </button>
 
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/login" onClick={logout}>Logout</a></li>
+                                    <li><Link className="dropdown-item" to="/loginpage" onClick={logout}>Logout</Link></li>
                                 </ul>
                             </div>
                             : null
