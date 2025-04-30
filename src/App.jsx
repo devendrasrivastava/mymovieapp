@@ -23,7 +23,7 @@ function App() {
   return (
     <MovieProvider>
       <NavBar />
-      <main className="main-content">
+      <main className="main-content app-wrapper">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/loginpage" element={<LoginPage />} />
@@ -32,8 +32,8 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
         </Routes>
       </main>
-
     </MovieProvider>
+    
   );
 }
 

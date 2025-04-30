@@ -86,20 +86,8 @@ export default function LoginPage() {
             },
           }}
         />
-        <Grid container spacing={2} sx={{ height: '100vh' }}>
+        <Grid container spacing={0} sx={{ height: '100vh', justifyContent: 'center',  }}>
           <CssBaseline />
-          <Grid
-            sx={{
-              gridColumn: { xs: '1 / span 12', md: '1 / span 7' },
-              // backgroundImage: 'url(../assets/login.jpg)',
-              backgroundImage: `url(${loginImage})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundColor: (theme) =>
-                theme.palette.mode === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
           <Grid
             sx={{
               gridColumn: { xs: '1 / span 12', md: '8 / span 5' },
